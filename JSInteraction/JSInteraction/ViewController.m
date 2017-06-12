@@ -27,7 +27,7 @@
 
 //
 - (IBAction)buttonClick:(id)sender {
-    [_webView InterActionToJs:@"alertMobile('15625298071')"];
+    [_webView InterActionToJs:@"alertMobile('1562529xxxx')"];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
