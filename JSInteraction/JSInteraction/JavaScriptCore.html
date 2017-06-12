@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <title>test</title>
+<meta charset="utf-8">
+    <body>
+    <p>点击以下按钮触发OC弹起alert事件</p>
+    <button onclick="myAlert()">弹出提示框</button>
+    <button onclick="myPresent()">推出下一页</button>
+    
+    <script>
+        //js调oc
+        function myAlert() {
+            var param = new Array();
+            param["title"] = "œ∑®†¥";
+            param["content"] = "我是传回参数123456789";
+            AiCaiTest.callBack(0, param);       //这里callBack对应WebViewJSExport接口
+        }
+    
+        //oc调js
+        function myPresent(ctl) {
+            var param = new Array();
+            param["animate"] = 1;
+            param["toController"] = "SecondViewController";
+            AiCaiTest.callBack(1, param);
+        }
+    
+        //oc调js
+        function alertMobile(num) {
+            alert('手机号是:' + num)
+        }
+    
+    </script>
+    
+    </body>
+</html>
